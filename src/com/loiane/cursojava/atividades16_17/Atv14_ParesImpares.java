@@ -8,19 +8,22 @@ public class Atv14_ParesImpares {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Digite 10 valores inteiros, separados por espaço ou enter: ");
-        int num1 = scan.nextInt();
-        int num2 = scan.nextInt();
-        int num3 = scan.nextInt();
-        int num4 = scan.nextInt();
-        int num5 = scan.nextInt();
-        int num6 = scan.nextInt();
-        int num7 = scan.nextInt();
-        int num8 = scan.nextInt();
-        int num9 = scan.nextInt();
-        int num10 = scan.nextInt();
+        int[] numeros = new int[10];
+        int countPar = 0, countImpar = 0;
+
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("Digite o " + (i + 1) + "º valor: ");
+            numeros[i] = scan.nextInt();
+            if (numeros[i] % 2 != 0) {
+                countImpar++;
+            } else {
+                countPar++;
+            }
+        }
 
         scan.close();
+
+        System.out.println("Há " + countPar + " números pares e " + countImpar + " números ímpares.");
 
     }
 

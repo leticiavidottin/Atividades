@@ -7,19 +7,20 @@ public class Atv7_Maior {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        int[] numeros = new int[5];
+        int maior = Integer.MIN_VALUE;
 
-        System.out.println("Digite o primeiro número: ");
-        double num1 = scan.nextDouble();
-        System.out.println("Digite o segundo número: ");
-        double num2 = scan.nextDouble();
-        System.out.println("Digite o terceiro número: ");
-        double num3 = scan.nextDouble();
-        System.out.println("Digite o quarto número: ");
-        double num4 = scan.nextDouble();
-        System.out.println("Digite o quinto e último número: ");
-        double num5 = scan.nextDouble();
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.print("Digite o " + (i + 1) + "º número: ");
+            numeros[i] = scan.nextInt();
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+            }
+        }
 
         scan.close();
+
+        System.out.println("O maior número é: " + maior);
 
     }
 

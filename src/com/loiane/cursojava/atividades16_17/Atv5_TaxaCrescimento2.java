@@ -32,6 +32,8 @@ public class Atv5_TaxaCrescimento2 {
 
             } while (popA > popB || txA < txB);
 
+            scan.close();
+
             int count = 0;
 
             while (popA < popB) {

@@ -6,24 +6,26 @@ public class Atv15_Fibonacci {
 
     public static void main(String[] args) {
 
-        int fib = 0, f0 = 0, f1 = 1;
-
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Digite o último termo que de deseja ver na sequência de fib: ");
+        System.out.println("Digite o último termo que de deseja ver na sequência de fibonacci: ");
         int termo = scan.nextInt();
 
         scan.close();
 
-        for (int i = 2; i < termo; i++) {
-            fib = f0 + f1;
+        int termoAtual = 0, primeiroTermo = 0, segundoTermo = 1;
+        int i = 1;
 
-            f0 = f1;
-            f1 = fib;
+        while (i < termo) {
+            int proximoTermo = primeiroTermo + segundoTermo;
+            primeiroTermo = segundoTermo;
+            segundoTermo = proximoTermo;
+            termoAtual = proximoTermo;
+
+            i++;
         }
 
-        System.out.println("O termo " + termo + " da sequência de fib é igual a " + fib);
-
+        System.out.println("O " + termo + "º termo da sequência de Fibonacci é: " + termoAtual);
     }
 
 }
