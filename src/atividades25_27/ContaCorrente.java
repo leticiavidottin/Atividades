@@ -7,11 +7,11 @@ public class ContaCorrente {
     boolean especial;
     double limite;
 
-    void consultarSaldo() {
+    public void consultarSaldo() {
         System.out.println("Seu saldo é de: " + saldo);
     }
 
-    double realizarSaque(double valor) {
+    public double realizarSaque(double valor) {
         if (valor <= 0) {
             System.out.println("Valor inválido.");
             return saldo;
@@ -27,7 +27,7 @@ public class ContaCorrente {
         }
     }
 
-    double realizarDeposito(double valor) {
+    public double realizarDeposito(double valor) {
         if (valor <= 0) {
             System.out.println("Valor inválido. Apenas valores positivos aceitos.");
             return saldo;
@@ -39,13 +39,13 @@ public class ContaCorrente {
         }
     }
 
-    void consultarChequeEspecial() {
+    public void consultarChequeEspecial() {
         if (saldo < 0) {
             System.out.println("Você está usando cheque especial");
         } else {
             System.out.println("Você não está usando cheque especial");
         }
-        
+
     }
 
 }

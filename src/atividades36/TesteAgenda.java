@@ -33,6 +33,18 @@ public class TesteAgenda {
             System.out.println();
         }
 
+        minhaAgenda.setContatos(contatos);
+
+        for (int i = 0; i < contatos.length; i++) {
+            System.out.println("Informações do " + (i + 1) + "° contato:");
+            System.out.println(contatos[i].toString());
+        }
+
+        // Imprimir informações de todos os contatos da agenda
+        System.out.println("Agenda " + minhaAgenda.getNomeAgenda());
+        System.out.println();
+        System.out.println(minhaAgenda.retornarContatos());
+
         scan.close();
 
     }

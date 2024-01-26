@@ -9,6 +9,9 @@ public class Teste {
         pessoa.setNome("Nome");
         pessoa.setEndereco("Endereço");
 
+        System.out.println(pessoa.getNome());
+        System.out.println(pessoa.getEndereco());
+
     }
 
 }

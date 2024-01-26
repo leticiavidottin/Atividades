@@ -19,6 +19,10 @@ public class CalculosSalario {
 
         scan.close();
 
+        // String horas = (horasTrabalhadas < 10) ? "Você não trabalhou horas
+        // suficientes" : "Você cumpriu as horas";
+        // If ternário
+
         double INSS = salarioBruto * 0.08;
         System.out.println("Foi pago R$" + INSS + " ao INSS.");
 

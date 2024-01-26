@@ -66,6 +66,8 @@ public class Aluno {
                 this.notasDisciplinas[i][j] = scan.nextDouble();
             }
         }
+        
+    
 
     }
 

@@ -11,7 +11,7 @@ public class FibonacciRecursivoTeste {
         System.out.print("Digite o termo que deseja ver na sequência de Fibonacci: ");
         int termo = scan.nextInt();
 
-        System.out.println("O " + termo + "º termo da sequência de Fibonacci é " + FibonacciRecursivo.calcularFibonacci(termo));
+        System.out.println("O " + termo + "º termo da sequência de Fibonacci é " + FibonacciRecursivo.calcular(termo));
 
         scan.close();
 

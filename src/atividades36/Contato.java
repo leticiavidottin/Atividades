@@ -35,22 +35,15 @@ public class Contato {
         this.telefone = telefone;
     }
 
-    public void mostrarContato(int i) {
+    public String mostrarContato() {
 
-        // no exercício é pedido um retorno de string. Porém, achei a solução
-        // apresentada pela professora muito confusa e preferi fazer de outro
-        // modo, que achei mais "elegante"
-
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Email: " + this.email);
-        System.out.println("Telefone: " + this.telefone);
+            return "Nome: " + this.nome + "\nEmail: " + this.email + "\nTelefone: " + this.telefone + "\n";
 
     }
 
-    public void mostratTodosContatos() {
-        for (int i = 0; i < 3; i++) {
-            this.mostrarContato(i);
-        }
+    @Override
+    public String toString() {
+        return "Nome: " + this.nome + "\nEmail: " + this.email + "\nTelefone: " + this.telefone + "\n";
     }
 
 }
